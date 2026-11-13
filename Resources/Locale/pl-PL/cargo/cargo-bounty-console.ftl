@@ -10,6 +10,7 @@ bounty-console-manifest-entry =
        *[other] { $item } x{ $amount }
     }
 bounty-console-manifest-reward = Nagroda: ${ $reward }
+cargo-bounty-label-name = Zamówienie: { $item } w ilości: { $amount }
 bounty-console-description-label = [color=gray]{ $description }[/color]
 bounty-console-id-label = ID#{ $id }
 bounty-console-flavor-left = Żądania zbierane z lokalnych nieuczciwych handlarzy.

@@ -112,6 +112,12 @@ public sealed partial class CargoSystem
 
         label.Id = bounty.Id;
         label.AssociatedStationId = stationId;
+        // Polonium: include the requested product in the printed label's name.
+        var bountyEntry = prototype.Entries[0];
+        var itemName = Loc.GetString(bountyEntry.Name);
+        _metaSystem.SetEntityName(uid, Loc.GetString("cargo-bounty-label-name",
+            ("item", itemName),
+            ("amount", bountyEntry.Amount)));
         var msg = new FormattedMessage();
         msg.AddMarkupOrThrow(Loc.GetString("bounty-manifest-header", ("id", bounty.Id)));
         msg.PushNewline();
