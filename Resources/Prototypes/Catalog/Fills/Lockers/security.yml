@@ -166,7 +166,7 @@
   id: FillLockerBrigmedic
   table: !type:AllSelector
     children:
-    - id: ClothingEyesGlassesSecurity
+    - id: BrigmedicNormGlasses
     - id: WeaponTaser
     - id: TrackingImplanter
       amount: 2
